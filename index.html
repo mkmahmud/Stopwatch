@@ -5,8 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stopwatch</title>
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital@1&display=swap');
+
+        body{
+            background-color: #0e0e24;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+        .hero{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .timmer{
+            display: flex;
+            color: white;
+        }
+        .timmer h2{
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-size: 80px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+       <div class="hero">
+            <div class="timmer">
+                <h2><span class="miniute">00</span>.<span class="second">00</span>.<span class="mili-second">00</span></h2>
+            </div>
+       </div>
+    </div>
 </body>
 </html>
