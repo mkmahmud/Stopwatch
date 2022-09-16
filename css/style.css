@@ -20,8 +20,14 @@
      color: white;
  }
  .timmer h2{
+     width: 350px;
      font-family: 'Barlow Semi Condensed', sans-serif;
      font-size: 80px;
+     /* text-align: center; */
+ }
+ .buttons{
+    display: flex;
+    justify-content: space-between;
  }
  button{
      outline: none;

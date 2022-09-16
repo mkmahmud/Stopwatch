@@ -43,7 +43,7 @@ const second = () => {
 
      
 // Minute
-iMin = 59;
+iMin = 0;
 const minute = () => {
 const miniuteDom = document.getElementById('miniute');
 miniuteDom.innerText = iMin + 1;
@@ -70,6 +70,8 @@ const hour = ()=>{
             miliSecond('start');
         }else if(e.target.value == 'stop'){
             miliSecond('stop');
+        }else if(e.target.value == 'reset'){
+            window.location.reload();
         }
         // console.log(e.target.value)
     });
